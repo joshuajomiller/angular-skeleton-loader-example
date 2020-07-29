@@ -43,12 +43,12 @@ export class ProfileService {
   constructor() { }
 
   getProfiles() : Observable<Profile[]> {
-    return of(this.profiles).pipe(delay(100));
+    return of(this.profiles).pipe(delay(2000));
   }
 }
 
 export class Profile {
-  image: string = '';
-  name: string = '';
-  bio: string = '';
+  image: string;
+  name: string;
+  bio: string;
 }

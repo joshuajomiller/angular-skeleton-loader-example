@@ -1,5 +1,9 @@
 <div class="container">
-  <app-skeload [skeletonComponent]="skeletonComponent" [skeletonData]="skeletonData" [skeletonCount]="4" skeletonClass="col-3">
+  <app-skeload [skeletonComponent]="skeletonComponent"
+               [skeletonData]="skeletonData"
+               [skeletonCount]="4"
+               [skeletonStop]="!!profiles.length"
+               [skeletonClass]="'col-3'">
     <div class="row">
       <ng-template #skeloader></ng-template>
       <app-profile [profileData]="profile" *ngFor="let profile of profiles" class="col-3"></app-profile>

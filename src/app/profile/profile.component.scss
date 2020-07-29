@@ -1,0 +1,19 @@
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+}
+h1, h2, h3, h4, h5, h6 {
+  min-height: 24px;
+}
+p {
+  min-height: 144px;
+}
+
+.card {
+  overflow: hidden;
+
+  * {
+    overflow: hidden;
+  }
+}
